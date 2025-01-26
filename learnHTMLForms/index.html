@@ -49,10 +49,13 @@
 <!--            Step 17-->
 <!--            Nest an input element within each label. -->
 <!--            Be sure to add each input after the label text, and include a space after the colon.-->
-            <label>Enter Your First Name: <input type="text"></label>
-            <label>Enter Your Last Name: <input type="text"></label>
-            <label>Enter Your Email: <input type="text"></label>
-            <label>Create a New Password: <input type="text"></label>
+<!--            Step 18-->
+<!--            Following accessibility best practices, link the input elements and the label elements together using the for attribute.-->
+<!--            Use first-name, last-name, email, and new-password as values for the respective id attributes.-->
+            <label for="first-name">Enter Your First Name: <input type="text" id="first-name"></label>
+            <label for="last-name">Enter Your Last Name: <input type="text" id="last-name"></label>
+            <label for="email">Enter Your Email: <input type="text" id="email"></label>
+            <label for="new-password">Create a New Password: <input type="text" id="new-password"></label>
         </fieldset>
         <fieldset></fieldset>
         <fieldset></fieldset>
