@@ -1,27 +1,73 @@
-/*Step 8*/
-/*The vh unit stands for viewport height, and is equal to 1% of the height of the viewport. */
-/*This makes it relative to the viewport height.*/
-/*It is time to spruce the project up with some CSS. */
-/*Begin by giving the body a width of 100%, and a height of 100vh.*/
 body {
     width: 100%;
     height: 100vh;
-    /*Step 9*/
-    /*Now, get rid of the horizontal scroll-bar, by setting the body default margin added by some browsers to 0.*/
     margin: 0;
-    /*Step 10*/
-    /*That is better.
-    Now, make the background easy on the eyes, by changing the body background-color to #1b1b32.
-    Then, to see the text, change the color to #f5f6f7.*/
     background-color: #1b1b32;
     color: #f5f6f7;
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
 }
 
-/*Step 16*/
-/*The rem unit stands for root em, and is relative to the font size of the html element.*/
-/*As label elements are inline by default, they are all displayed side by side on the same line, making their text hard to read.
-To make them appear on separate lines, add display: block to the label element, and add a margin of 0.5rem 0, to separate them from each other.*/
 label {
     display: block;
     margin: 0.5rem 0;
+}
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 60vw;
+    padding: 0 0 2em 0
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+input, textarea, select {
+    width: 100%;
+    margin: 10px 0 0 0;
+    min-height: 2em;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+input, textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+}
+
+input[type=submit] {
+    display: block;
+    width: 60%;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 300px;
+    margin: 1em auto 1em auto;
+}
+
+input[type=file] {
+    padding: 1px 2px;
+}
+
+a {
+    color: #dfdfe2;
 }
